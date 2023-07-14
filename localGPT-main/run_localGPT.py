@@ -129,7 +129,7 @@ def load_model(device_type, model_id, model_basename=None):
 @click.command()
 @click.option(
     "--device_type",
-    default="cpu",
+    default="cuda",
     type=click.Choice(
         [
             "cpu",

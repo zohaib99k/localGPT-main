@@ -89,7 +89,7 @@ def split_documents(documents: list[Document]) -> tuple[list[Document], list[Doc
 @click.command()
 @click.option(
     "--device_type",
-    default="cpu",
+    default="cuda",
     type=click.Choice(
         [
             "cpu",
