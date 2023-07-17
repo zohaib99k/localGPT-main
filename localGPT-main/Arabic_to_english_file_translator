@@ -1,0 +1,12 @@
+from mtranslate import translate
+
+input_file = 'arabic.txt'
+output_file = 'english.txt'
+
+with open(input_file, 'r', encoding='utf-8') as file:
+    arabic_text = file.read()
+
+english_text = translate(arabic_text, 'en')
+
+with open(output_file, 'w', encoding='utf-8') as file:
+    file.write(english_text)
